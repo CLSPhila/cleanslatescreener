@@ -16,3 +16,4 @@ environmentName=
 webAppName=
 ```
 
+The code is in github (obviously!). I like to add an azure repo as a remote, called `azure`. Then when I'm ready to deploy, I `git push azure master`. This triggers the azure pipeline.
