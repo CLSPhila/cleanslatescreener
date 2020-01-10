@@ -15,8 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.schemas import get_schema_view
+
 
 urlpatterns = [
+    path('', get_schema_view(
+        title="Clean Slate Screener",
+        description="Schema for the Clean Slate Screener API",
+        version="0.0.1",
+        urlconf='ujs_search.urls',
+    ), name='OpenAPI-Schema'),
     path('admin/', admin.site.urls),
     path('ujs/', include('ujs_search.urls'))
 ]

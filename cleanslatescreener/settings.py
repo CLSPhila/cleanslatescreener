@@ -63,7 +63,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'cleanslatescreen.urls'
+ROOT_URLCONF = 'cleanslatescreener.urls'
 
 TEMPLATES = [
     {
@@ -81,7 +81,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'cleanslatescreen.wsgi.application'
+WSGI_APPLICATION = 'cleanslatescreener.wsgi.application'
 
 
 # Database

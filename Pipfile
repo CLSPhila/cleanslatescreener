@@ -18,7 +18,7 @@ requests = "==2.22.0"
 django = "==2.2.6"
 djangorestframework = "==3.10.3"
 django-cors-headers = "==3.2.0"
-django-docketsearch = {git = "https://github.com/clsphila/django-docketsearch.git",editable = true,ref = "fd4bab004920ce69e3bd763ccdb68589fdee0e27"}
+django-docketsearch = {git = "https://github.com/clsphila/django-docketsearch.git",editable = true,ref = "118719e082d19bcdc2c461478e5ac9fbf6d584a2"}
 gunicorn = "*"
 
 [requires]
