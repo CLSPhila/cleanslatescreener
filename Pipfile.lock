@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "4cadbd7123eaaeba3192bdab419adf71072c985b6e97b82bc94e56ca381305d3"
+            "sha256": "b97d73fe8b4d3defe61cc07f155e2ba6d6815598116ca416abfbe7adda01d534"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -78,7 +78,7 @@
         "django-docketsearch": {
             "editable": true,
             "git": "https://github.com/clsphila/django-docketsearch.git",
-            "ref": "d3e05720afc43047f5f611569a26555c0560cfaa"
+            "ref": "a2467a4e23879457297d98cff1547de0b52554d9"
         },
         "djangorestframework": {
             "hashes": [
