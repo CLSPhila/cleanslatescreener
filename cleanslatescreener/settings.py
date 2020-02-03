@@ -133,3 +133,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# timelimit for how long UJS searches can take.
+UJS_REQUEST_TIMELIMIT =  float(os.environ.get("UJS_REQUEST_TIMELIMIT")) if os.environ.get("UJS_REQUEST_TIMELIMIT") else float("inf")
+
