@@ -90,7 +90,8 @@ WSGI_APPLICATION = 'cleanslatescreener.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(os.environ.get("DB") or BASE_DIR, 'db.sqlite3'),
+
     }
 }
 
@@ -132,3 +133,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# timelimit for how long UJS searches can take.
+UJS_REQUEST_TIMELIMIT =  float(os.environ.get("UJS_REQUEST_TIMELIMIT")) if os.environ.get("UJS_REQUEST_TIMELIMIT") else float("inf")
+
