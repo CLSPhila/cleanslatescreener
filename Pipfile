@@ -22,8 +22,8 @@ django-docketsearch = {git = "https://github.com/clsphila/django-docketsearch.gi
 gunicorn = "==20.0.4"
 aiohttp = "==4.0.0a1"
 gevent = "==1.4"
-brotli = "*"
-brotlipy = "*"
+brotli = "==1.0.9"
+brotlipy = "==0.7.0"
 
 [requires]
 python_version = "3.7"
